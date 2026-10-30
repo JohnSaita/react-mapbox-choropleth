@@ -1,0 +1,150 @@
+.app,
+.map {
+  position: absolute;
+  inset: 0;
+}
+
+.panel,
+.legend {
+  position: absolute;
+  left: 16px;
+  background: rgba(11, 29, 51, 0.94);
+  border: 1px solid var(--navy-2);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  padding: 16px 18px;
+}
+
+.panel {
+  top: 16px;
+  width: 300px;
+}
+
+.brand {
+  margin: 0 0 6px;
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.panel h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.muted {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.toggle {
+  display: flex;
+  gap: 4px;
+  margin: 14px 0;
+  padding: 4px;
+  background: var(--navy-2);
+  border-radius: 8px;
+}
+
+.toggle button {
+  flex: 1;
+  padding: 8px 6px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.toggle button[aria-pressed='true'] {
+  background: var(--teal);
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.info {
+  margin: 0;
+  min-height: 112px;
+}
+
+.county-name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info dd {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 6px 0;
+  border-top: 1px solid var(--navy-2);
+  font-size: 14px;
+}
+
+.info dd span {
+  color: var(--muted);
+}
+
+.legend {
+  bottom: 32px;
+  width: 200px;
+}
+
+.legend h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.legend ul {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 0;
+}
+
+.swatch {
+  width: 22px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.credit {
+  position: absolute;
+  right: 8px;
+  bottom: 28px;
+  margin: 0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #334;
+  font-size: 11px;
+}
+
+.token-missing {
+  padding: 32px;
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  .panel {
+    right: 16px;
+    width: auto;
+  }
+  .legend {
+    display: none;
+  }
+}
